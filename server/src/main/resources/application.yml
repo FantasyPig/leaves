@@ -1,0 +1,18 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: leaves
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url:  jdbc:mysql://127.0.0.1:3306/leaves?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
